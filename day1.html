@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1</title>
+    <style>
+        div{
+            text-align: center;
+            background-color: azure;
+            width: 500px;
+            height: 300px;
+            margin-left: 30%;
+        }
+        body{
+            background-color: black;
+        }
+
+        div h2 {
+            margin-top: 40px;
+        }
+        input{
+            color: black;
+            background-color: coral;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Basic Calculator</h2>
+      <h5>A and B provides an doing some basic calculations</h5>
+      <p>A = 10, B = 15</p>
+
+      <input type="button" value="Calculate"  onclick="calcu()"/>
+      <p id="plus">A + B =</p>
+      <p id="minus">A - B =</p>
+      <p id="multi">A * B =</p>
+      <p id="divide">A / B =</p>
+    </div>
+
+    <script>
+      var a = 10;
+      var b = 15;
+      function calcu() {
+        document.getElementById("plus").innerHTML = `A + B = ${a + b}`;
+        document.getElementById("minus").innerHTML = `A - B = ${a - b}`;
+        document.getElementById("multi").innerHTML = `A * B = ${a * b}`;
+        document.getElementById("divide").innerHTML = `A / B = ${a / b}`;
+      }
+    </script>
+  </body>
+</html>

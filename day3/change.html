@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DOM Manipulation</title>
+    <style>
+      #one {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+      <hr>
+    <div id="one"></div>
+    <br>
+
+    <button onclick="changeStyle()">Change Style</button>
+
+    <hr>
+    <div id="para2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. A deleniti
+      quibusdam, omnis non consequatur neque minus eum veritatis reprehenderit
+      magni labore possimus facere itaque adipisci porro impedit ducimus nulla
+      eius?
+    </div>
+
+    <img
+      id="image"
+      src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Chris_Hemsworth_as_Thor.jpg/220px-Chris_Hemsworth_as_Thor.jpg"
+      width="300px"
+    />
+
+    <br><br>
+    <button onclick="changeImage()">Change Image</button>
+
+    <hr>
+
+    <br>
+    <input type="text" placeholder="name" id="inp" />
+    <p id="getname"></p>
+
+
+    <button onclick="getValue()">Get Name</button>
+
+    <script src="change.js"></script>
+  </body>
+</html>
